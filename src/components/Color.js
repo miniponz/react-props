@@ -25,10 +25,10 @@ function Color({ name, hex, rgb }) {
   return (
     <dl>
       <dt>Name</dt>
-      <dd>{name}</dd>
+      <dd>{name || hex}</dd>
 
       <dt>Hex</dt>
-      <dd>{hex || rgbToHex(rgb)}</dd>
+      <dd>{hex ? hex : rgbToHex(rgb)}</dd>
 
       <dt>RGB</dt>
       <dd>{rgb}</dd>
@@ -37,8 +37,8 @@ function Color({ name, hex, rgb }) {
 }
 
 Color.propTypes = {
-  name: PropTypes.string.isRequired,
-  hex: PropTypes.string,
+  name: PropTypes.string,
+  hex: PropTypes.string.isRequired,
   rgb: PropTypes.string.isRequired,
 };
 
