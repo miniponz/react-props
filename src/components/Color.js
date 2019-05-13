@@ -29,8 +29,8 @@ function Color({ name, hex, rgb }) {
   };
   return (
     <dl style={dlStyle}>
-      <dt>Name</dt>
-      <dd>{name}</dd>
+      {name && <><dt>Name</dt>
+      <dd>{name}</dd> </>}
 
       <dt>Hex</dt>
       <dd>{hex ? hex : rgbToHex(rgb)}</dd>

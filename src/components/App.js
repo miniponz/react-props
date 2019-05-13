@@ -6,7 +6,7 @@ export default function App() {
   return (
     <>
       <Header />
-      <Color name="purple"  rgb="128,0,128" />
+      <Color name="purplesaurus rex"  rgb="128,0,128" />
     </>
   );
 }
