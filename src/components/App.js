@@ -1,12 +1,12 @@
 import React from 'react';
-import Dog from './Dog';
+import Color from './Color';
 import Header from './Header';
 
 export default function App() {
   return (
     <>
       <Header />
-      <Dog name="Ana Dogg" age={2}  weight="27 lbs" />
+      <Color name="purple"  rgb="128,0,128" />
     </>
   );
 }

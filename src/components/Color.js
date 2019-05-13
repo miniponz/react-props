@@ -21,9 +21,14 @@ function rgbToHex(rgb) {
 }
 
 
+
+
 function Color({ name, hex, rgb }) {
+  const dlStyle = {
+    color: hex
+  };
   return (
-    <dl>
+    <dl style={dlStyle}>
       <dt>Name</dt>
       <dd>{name || hex}</dd>
 
