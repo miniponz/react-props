@@ -25,7 +25,7 @@ function rgbToHex(rgb) {
 
 function Color({ name, hex, rgb }) {
   const dlStyle = {
-    color: hex
+    color: hex || rgbToHex(rgb)
   };
   return (
     <dl style={dlStyle}>
