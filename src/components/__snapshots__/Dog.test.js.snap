@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Color Component matches the color thing 1`] = `
+<dl>
+  <dt>
+    Name
+  </dt>
+  <dd>
+    Ana Dogg
+  </dd>
+  <dt>
+    Age
+  </dt>
+  <dd>
+    2
+  </dd>
+  <dt>
+    Weight
+  </dt>
+  <dd>
+    27 lbs
+  </dd>
+</dl>
+`;
