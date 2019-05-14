@@ -11,6 +11,7 @@ function Button({ title }){
   };
   const clickHandler = event => {
     event.preventDefault();
+    //eslint-disable-next-line
     console.log(title);
   };
   
