@@ -1,12 +1,17 @@
 import React from 'react';
-import Color from './Color';
+import Button from './ColorPicker';
 import Header from './Header';
 
 export default function App() {
   return (
     <>
       <Header />
-      <Color name="purplesaurus rex"  rgb="128,0,128" />
+      <Button title="red" />
+      <Button title="orange" />
+      <Button title="yellow" />
+      <Button title="green" />
+      <Button title="blue" />
+      <Button title="purple" />
     </>
   );
 }
