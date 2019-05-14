@@ -6,8 +6,8 @@ function Button({ title }){
     color: title,
     height: '50px',
     margin: '5px',
-    'border-radius': '5px',
-    'background-color': 'black'
+    borderRadius: '5px',
+    backgroundColor: 'black'
   };
   const clickHandler = event => {
     event.preventDefault();
