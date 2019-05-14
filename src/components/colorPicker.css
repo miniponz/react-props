@@ -1,0 +1,9 @@
+button {
+  font-family: "Courier New"; 
+  font-size: 14px; 
+  font-style: normal; 
+  height: 50px;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: black;
+}

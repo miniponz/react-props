@@ -1,17 +1,29 @@
 import React from 'react';
-import Button from './ColorPicker';
+import styles from './colorPicker.css';
 import Header from './Header';
 
-export default function App() {
+// const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple'];
+
+export default function App(props) {
+  //eslint-disable-next-line
+  const colors = props.colors;
+
+  
+  let textStyle = {};
+  const colorButtons = colors.map((color) => {
+    const clickHandler = event => {
+      event.preventDefault();
+      //eslint-disable-next-line
+        console.log(color);
+    };
+    textStyle = { color: color };
+    return <button id={color} key={color} style={styles.button} onClick={clickHandler}><span style={textStyle}>{color}</span></button>;
+  });
+
   return (
     <>
       <Header />
-      <Button title="red" />
-      <Button title="orange" />
-      <Button title="yellow" />
-      <Button title="green" />
-      <Button title="blue" />
-      <Button title="purple" />
+      <div>{colorButtons}</div>
     </>
   );
 }

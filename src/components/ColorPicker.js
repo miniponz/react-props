@@ -1,27 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './colorPicker.css';
 
-function Button({ title }){
-  const buttonStyle = {
-    color: title,
-    height: '50px',
-    margin: '5px',
-    borderRadius: '5px',
-    backgroundColor: 'black'
-  };
+
+function ColorPicker({ title }){
   const clickHandler = event => {
     event.preventDefault();
     //eslint-disable-next-line
     console.log(title);
   };
   
+  const textStyle = {
+    color: title
+  };
   return (
-    <button style={buttonStyle} onClick={clickHandler}>{title}</button>
+    <button style={styles.button} onClick={clickHandler}><span style={textStyle}>{title}</span></button>
   );
 }
 
-Button.propTypes = {
+ColorPicker.propTypes = {
   title: PropTypes.string.isRequired
 };
 
-export default Button;
+export default ColorPicker;
+
